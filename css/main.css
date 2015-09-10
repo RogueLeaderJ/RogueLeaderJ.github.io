@@ -1,0 +1,177 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Sep 4, 2015, 9:29:35 AM
+    Author     : Red
+*/
+
+//scheme: white, 3399FF (blue), black
+title {
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    border: none;
+    font: normal 36px/1 Georgia, serif;
+    color: #2a8fd3;
+    text-align: center;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+  }
+          
+  body {
+  background-color: white;
+  color: #222;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+}
+
+nav {
+  background-color: white;  //blue
+  border: 1px solid #3399FF;
+  border-radius: 4px;
+  //box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.055);
+  color: blue;//888
+  display: block;
+  margin: 8px 22px 8px 22px;
+  overflow: hidden;
+  width: 90%; 
+}
+
+  nav ul {
+    margin: 0;
+    padding: 0;
+  }
+
+nav ul li {
+  display: inline-block;
+  list-style-type: none;
+  color: black;
+
+  -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s; 
+}
+
+  nav > ul > li > a > .caret,
+      nav > ul > li > div ul > li > a > .caret {
+    border-top: 4px solid #FFF;
+    border-right: 4px solid transparent;
+    border-left: 4px solid transparent;
+    content: "";
+    display: inline-block;
+    height: 0;
+    width: 0;
+    vertical-align: middle;
+
+    -webkit-transition: color 0.1s linear;
+      -moz-transition: color 0.1s linear;
+    -o-transition: color 0.1s linear;
+      transition: color 0.1s linear; 
+  }
+
+nav > ul > li > div ul > li > a > .caret {
+        border-bottom: 4px solid transparent;
+        border-top: 4px solid transparent;
+        border-right: 4px solid transparent;
+        border-left: 4px solid #f2f2f2;
+        margin: 0 0 0 8px;
+}
+
+  nav > ul > li > a {
+    color: #3399FF; //blue
+    display: block;
+    line-height: 56px;
+    padding: 0 24px;
+    text-decoration: none;
+  }
+
+nav > ul > li:hover {
+  background-color: rgb( 40, 44, 47 );
+
+}
+
+nav > ul > li:hover > a {
+  color: rgb( 255, 255, 255 );
+}
+
+nav > ul > li:hover > a > .caret {
+  border-top-color: rgb( 255, 255, 255 );
+}
+
+nav > ul > li > div ul > li:hover > a > .caret {
+        border-left-color: rgb(255,255,255);
+}
+      
+nav > ul > li > div,
+  nav > ul > li > div ul > li > div {
+    background-color: rgb( 40, 44, 47 );
+    border-top: 0;
+    border-radius: 0 0 4px 4px;
+    box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.055);
+    display: none;
+    margin: 0;
+    opacity: 0;
+    position: absolute;
+    width: 165px;
+    visibility: hidden;
+
+    -webkit-transiton: opacity 0.2s;
+    -moz-transition: opacity 0.2s;
+    -ms-transition: opacity 0.2s;
+    -o-transition: opacity 0.2s;
+    -transition: opacity 0.2s;
+  }
+	  
+        nav > ul > li > div ul > li > div {
+                background-color: rgb( 40, 44, 47 );
+                border-radius: 0 4px 4px 4px;
+                box-shadow: inset 2px 0 5px rgba(0,0,0,.15);
+                margin-top: -42px;
+                right: -165px;
+        }
+
+        nav > ul > li:hover > div,
+		nav > ul > li > div ul > li:hover > div {
+          display: block;
+          opacity: 1;
+          visibility: visible;
+        }
+
+        nav > ul > li > div ul > li,
+                nav > ul > li > div ul > li > div ul > li {
+          display: block;
+          position: relative;
+        }
+
+        nav > ul > li > div ul > li > a,
+                    nav > ul > li > div ul > li > div ul > li > a {
+          color: #fff;
+          display: block;
+          padding: 12px 24px;
+          text-decoration: none;
+        }
+
+          nav > ul > li > div ul > li:hover > a {
+            background-color: rgba( 255, 255, 255, 0.1);
+          }
+
+home{position:absolute;left:0;top:0;width:100%;height:100%;min-height:600px}
+.home-logo{display:block;position:absolute;left:50%;top:37%;width:236px;height:33px;margin:-113px 0 0 -118px;color:#fff}
+.home-logo:after{content:'.com';position:absolute;right:-40px;top:7px;font-size:18px;line-height:18px;opacity:0;-moz-transform:translateX(10px);-ms-transform:translateX(10px);-webkit-transform:translateX(10px);transform:translateX(10px);-moz-transition:all 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);-o-transition:all 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);-webkit-transition:all 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);transition:all 0.8s cubic-bezier(0.165, 0.84, 0.44, 1)}
+.desktop .home-logo:hover:after{opacity:1;-moz-transform:translateX(0px);-ms-transform:translateX(0px);-webkit-transform:translateX(0px);transform:translateX(0px)}
+.home-title{position:absolute;left:50%;top:48%;width:800px;margin:-98px 0 0 -400px;text-align:center}
+.home-title-l1{color:#3399FF;font:normal 60px/60px "georgia";text-transform:uppercase;letter-spacing:0.1em}
+.home-title-l2{font-size:36px;line-height:36px;letter-spacing:0.2em}
+.home-title-l3{font-size:24px;line-height:24px;letter-spacing:0.2em;padding:45px 0 18px 0;}
+.home-start{position:absolute;left:50%;bottom:30%;width:218px;padding:16px 0 18px 0;margin-left:-110px;border:1px solid #fff;font:normal 20px/20px "sofia_probold";text-align:center;cursor:pointer;overflow:hidden}
+.desktop .home-start:hover .home-start-hover{-moz-transform:translateX(0%);-ms-transform:translateX(0%);-webkit-transform:translateX(0%);transform:translateX(0%)}
+.desktop .home-start:hover .home-start-hover:before{-moz-transform:translateX(0%);-ms-transform:translateX(0%);-webkit-transform:translateX(0%);transform:translateX(0%)}
+.home-start-hover{position:absolute;left:0;top:0;width:100%;height:100%;overflow:hidden;-moz-transform:translateX(-100%);-ms-transform:translateX(-100%);-webkit-transform:translateX(-100%);transform:translateX(-100%);-moz-transition:all 0.8s cubic-bezier(0.77, 0, 0.175, 1);-o-transition:all 0.8s cubic-bezier(0.77, 0, 0.175, 1);-webkit-transition:all 0.8s cubic-bezier(0.77, 0, 0.175, 1);transition:all 0.8s cubic-bezier(0.77, 0, 0.175, 1)}
+.home-start-hover:before{content:attr(data-txt);position:absolute;left:0;top:0;width:100%;padding:16px 0 18px 0;color:rgba(0,0,0,0.6);font:normal 20px/20px "arial";background-color:#fff;-moz-transform:translateX(100%);-ms-transform:translateX(100%);-webkit-transform:translateX(100%);transform:translateX(100%);-moz-transition:all 0.8s cubic-bezier(0.77, 0, 0.175, 1);-o-transition:all 0.8s cubic-bezier(0.77, 0, 0.175, 1);-webkit-transition:all 0.8s cubic-bezier(0.77, 0, 0.175, 1);transition:all 0.8s cubic-bezier(0.77, 0, 0.175, 1)}
+
